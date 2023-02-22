@@ -1,0 +1,29 @@
+{
+  "name": "just_read_it",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/analisegiobbi3/Just_Read_It.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/analisegiobbi3/Just_Read_It/issues"
+  },
+  "homepage": "https://github.com/analisegiobbi3/Just_Read_It#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2",
+    "express-sessions": "^1.0.6",
+    "handlebars": "^4.7.7",
+    "mysql2": "^3.1.2",
+    "sequelize": "^6.28.1"
+  }
+}
