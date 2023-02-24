@@ -1,0 +1,51 @@
+:root {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+header{
+    background: linear-gradient(02deg, rgb(210, 109, 26), white); 
+    color:white;
+    padding: 3rem;
+}
+
+h1 {
+    font-size: 4rem;
+    
+}
+
+main {
+    background-color: antiquewhite;
+}
+.img-thumbnail {
+    margin:3em;
+}
+
+#loginbtn {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#loginbtn:hover {
+    text-decoration: underline;
+   
+}
+
+#logoutbtn {
+
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+
+
+#logoutbtn:hover {
+    text-decoration: underline;
+   
+}
+
+#signupbtn:hover{
+    text-decoration: underline;
+}
