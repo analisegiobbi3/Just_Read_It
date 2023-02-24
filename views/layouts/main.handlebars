@@ -15,6 +15,14 @@
         <div class ="container-fluid text-center">
            <h1>Just Read It!</h1>
         </div>
+        <nav class="text-center">
+        {{#if loggedIn}}
+          <a class="btn btn-dark" id="logoutbtn" href="/" role="button">Logout</a>
+          {{else}}
+          <a class="btn btn-dark" id="loginbtn" href="/login" role="button">Login</a>
+          <a class="btn btn-link" id="signupbtn" href="/signup" role="button">Sign Up Here</a>
+        {{/if}}
+        </nav>
     </header>
 
 <main>
@@ -22,13 +30,10 @@
         
     <img src="/assets/output-onlinegiftools.gif" alt="Book/E-reader animation" class="img-thumbnail">
 
-    <div class="text-center">
-        {{#if loggedIn}}
-          <a class="btn btn-dark" id="logoutbtn" href="/" role="button">Logout</a>
-          {{else}}
-          <a class="btn btn-dark" id="loginbtn" href="/login" role="button">Login</a>
-          <a class="btn btn-link" id="signupbtn" href="/signup" role="button">Sign Up Here</a>
-        {{/if}}
+    <div>
+
+        {{{body}}}
+    
     </div>
 </div>
 </main>
