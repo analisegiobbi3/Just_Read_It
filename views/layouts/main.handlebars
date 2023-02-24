@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just Read It!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/public/css/home-style.css">
+</head>
+
+<body>
+
+    <header >
+        <div class ="container-fluid text-center">
+           <h1>Just Read It!</h1>
+        </div>
+    </header>
+
+<main>
+<div class="container-fluid text-center">
+        
+    <img src="/assets/output-onlinegiftools.gif" alt="Book/E-reader animation" class="img-thumbnail">
+
+    <div class="text-center">
+        {{#if loggedIn}}
+          <a class="btn btn-dark" id="logoutbtn" href="/" role="button">Logout</a>
+          {{else}}
+          <a class="btn btn-dark" id="loginbtn" href="/login" role="button">Login</a>
+          <a class="btn btn-link" id="signupbtn" href="/signup" role="button">Sign Up Here</a>
+        {{/if}}
+    </div>
+</div>
+</main>
+</body>
+
+</html>
