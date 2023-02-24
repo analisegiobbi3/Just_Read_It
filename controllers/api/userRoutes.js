@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { User, Book } = require('../../models');
 const session = require('express-sessions');
 const withAuth = require('../../utils/auth');
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 router.get('/', async (req, res) =>{
     try{
