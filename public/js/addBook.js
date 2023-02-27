@@ -10,13 +10,23 @@ const addBook = async(event) => {
             book_title,
             book_author,
         }),
-        header: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json' },
     })
     if (response.ok){
         document.location.replace('/profile')
     }else{
         alert(response.statusText);
     }
+
+    const getBookAPI = (booktitle) => {
+        let goodreadsURL = ''
+        fetch(goodreadsURL).then(function(data){
+            console.log(data)
+            var bookCover = data[0]
+        })
+    }
+
+
 
     //add your fetch request for the third party api
     

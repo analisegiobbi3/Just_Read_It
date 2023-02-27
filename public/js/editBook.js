@@ -11,7 +11,7 @@ const editBook = async(event) => {
             book_title,
             book_author,
         }),
-        header: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json' },
     })
     if (response.ok){
         document.location.replace('/profile')
