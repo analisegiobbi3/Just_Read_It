@@ -1,8 +1,8 @@
 const editBook = async(event) => {
     event.preventDefault();
     //need some handlgers here that are based off of button/ inputs in the html
-    const book_title = document.querySelector('').value;
-    const book_author = document.querySelector('').value;
+    const book_title = document.querySelector('input[name="edit-book-title"]').value.trim();
+    const book_author = document.querySelector('input[name="edit-author-name"]').value.trim();
     const id = window.location.toString().split('/')[window.location.toString().split('/').length-1];
 
     const response = await fetch(`/api/books/${id}`, {
@@ -20,6 +20,4 @@ const editBook = async(event) => {
     }
 }
 
-//will need to add the proper id here when we have it 
-// may need to edit submit and make it click 
-document.querySelector('').addEventListener('submit', editBook)
+document.querySelector('#submit-edit-post').addEventListener('submit', editBook)

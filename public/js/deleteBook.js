@@ -18,4 +18,4 @@ const deleteBook = async(event) => {
 }
 
 //will need to add the proper id here when we have it 
-document.querySelector('').addEventListener('click', deleteBook)
+document.querySelector('#delete-post').addEventListener('click', deleteBook)
