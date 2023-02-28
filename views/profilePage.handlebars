@@ -9,9 +9,7 @@
             <section id="yourBooks">
                 <h2>Your Books</h2>
                 {{#each books as |book|}}
-                {{> book-info book}}
-                {{book_title}}   
-                {{author}}   
+                {{> book-info book}}  
                 <a href="/dashboard/edit/{{id}}"><button class="s-primary is-pulled-right mt-3 mb-3 btn btn-outline-success">Edit Book</button></a>
                 {{/each}}
             </section>
