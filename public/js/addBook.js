@@ -17,22 +17,11 @@ const addBook = async(event) => {
     }else{
         alert(response.statusText);
     }
-
-    const getBookAPI = (booktitle) => {
-        let goodreadsURL = ''
-        fetch(goodreadsURL).then(function(data){
-            console.log(data)
-            var bookCover = data[0]
-        })
-    }
-
-
-
-    //add your fetch request for the third party api
     
-
 }
 
 //will need to add the proper id here when we have it 
-document.querySelector('').addEventListener('sumbit', addBook)
+document.querySelector('').addEventListener('submit', addBook)
+
+
 
