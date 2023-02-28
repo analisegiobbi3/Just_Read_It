@@ -10,6 +10,8 @@ const addBook = async(event) => {
         body: JSON.stringify({
             book_title,
             book_author,
+            bookCover,
+            bookDescription,
         }),
         headers: { 'Content-Type': 'application/json' },
     })
