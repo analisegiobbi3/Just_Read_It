@@ -8,7 +8,7 @@ const deleteBook = async(event) => {
         body: JSON.stringify({
             book_id: id
         }),
-        header: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json' },
     })
     if (response.ok){
         document.location.replace('/profile')

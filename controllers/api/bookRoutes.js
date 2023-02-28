@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Book } = require('../../models');
-const sequelize = require('../config/connection');
+const sequelize = require('../../config/connection');
 const withAuth = require('../../utils/auth')
 
 //not sure if we neeed to get all of the book data to post or destroy

@@ -1,8 +1,7 @@
 const router = require('express').Router();
 const { User, Book } = require('../../models');
-const session = require('express-sessions');
+const session = require('express-session');
 const withAuth = require('../../utils/auth');
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 router.get('/', async (req, res) =>{
     try{
@@ -29,7 +28,7 @@ router.get('/', async (req, res) =>{
             ]
         })
         if (!userData){
-            res.status(404).json({ message: 'There is no user with this id '})
+            res.status(404).json({ message: 'There are no users with this id '})
         }
         res.status(200).json(userData)
     }catch(err){
@@ -44,7 +43,7 @@ router.post('/', async (req, res) =>{
             email: req.body.email,
             password: req.body.password,
         })
-        req.session.save(() => {
+        req.sesssion.save(() => {
             req.session.user_id = userData.id
             req.session.username = userData.username
             req.session.logged_in = true
@@ -58,7 +57,7 @@ router.post('/', async (req, res) =>{
 
 router.post('/login', async (req, res) =>{
     try{
-        const userData = await User.findOne({ where: {username: req.body.username }})
+        const userData = await User.findOne({ where: { username: req.body.username }})
         if(!userData){
             res.status(400).json({ message: "Incorrect username or password, please try again" })
         }
