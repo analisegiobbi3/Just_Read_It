@@ -85,4 +85,8 @@ router.get('/post/', withAuth, async (req, res) =>{
     
 })
 
+router.get('/findBooks', (req, res) => {
+    res.render('findBooks')
+})
+
 module.exports = router;
