@@ -1,0 +1,18 @@
+<article>
+    <h2 class="title mt-5">Edit Posts</h2>
+    <form>
+        <div>
+            <label for="book-title" class="form-label">Book Title: </label>
+            <input class="input" name="edit-book-title" type="text" value="{{book.book_title}}"/>
+        </div>
+        <div>
+            <label for="book-author" class="form-label">Book Author: </label>
+            <input class="textarea" name="edit-author-name" type="text" value="{{book.author}}"/>
+        </div>
+        <button id="submit-edit-post" type="submit" class="is-primary is-pulled-right mt-3 mb-3 btn btn-outline-success" style="color: #1b4332">Save Edited Book</button>
+        <button id="delete-post" type="button" class="is-primary is-pulled-right mt-3 mb-3 btn btn-outline-success" style="color: #1b4332">Delete Book</button>
+    </form>
+</article>
+
+<script src="/js/editBook.js"></script>
+<script src="/js/deleteBook.js"></script>
