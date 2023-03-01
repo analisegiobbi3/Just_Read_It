@@ -49,3 +49,10 @@ main {
 #signupbtn:hover{
     text-decoration: underline;
 }
+
+#map { height: 180px; }
+
+#mainHeader {
+    font-family: 'Gloock', serif;
+    color: black;
+}
