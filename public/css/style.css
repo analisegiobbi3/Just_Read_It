@@ -50,7 +50,10 @@ main {
     text-decoration: underline;
 }
 
-#map { height: 180px; }
+#map { 
+    height: 700px;
+    width: auto;
+ }
 
 #mainHeader {
     font-family: 'Gloock', serif;
