@@ -56,3 +56,15 @@ main {
     font-family: 'Gloock', serif;
     color: black;
 }
+
+#header-img {
+    height: 150px;
+    width: 150px;
+}
+
+#page-title {
+
+    font-size: 1000%;
+    margin-bottom: -15rem;
+    
+}
