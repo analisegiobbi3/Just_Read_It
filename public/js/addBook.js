@@ -1,12 +1,15 @@
+// import bookAPI from 'book-api'
+import bookAPI from 'book-api';
+
 const addBook = async(event) => {
     event.preventDefault();
 
     //need some h here that are based off of button/ inputs in the html
     const book_title = document.querySelector('#book-title').value;
-    const book_author = document.querySelector('#book-author').value;
+    const author = document.querySelector('#book-author').value;
 
     let getBookData = await function(book_title){ 
-        const {Akademibokhandeln, Adlibris} = require('book-api');
+        const {Akademibokhandeln, Adlibris} = bookAPI
         const source = new Adlibris();
     
         // Search for books
@@ -22,7 +25,7 @@ const addBook = async(event) => {
                     method: 'POST',
                     body: JSON.stringify({
                         book_title,
-                        book_author,
+                        author,
                         bookCover,
                         bookDescription,
                     }),
@@ -38,6 +41,31 @@ const addBook = async(event) => {
     }
     getBookData(book_title)
 }
+
+
+
+// const addBook = async(event) => {
+//     event.preventDefault();
+//     //need some handlgers here that are based off of button/ inputs in the html
+//     const book_title = document.querySelector('#book-title').value;
+//     const author = document.querySelector('#book-author').value;
+
+//     const response = await fetch('/api/books', {
+//         method: 'POST',
+//         body: JSON.stringify({
+//             book_title,
+//             author,
+//         }),
+//         headers: { 'Content-Type': 'application/json' },
+//     })
+//     if (response.ok){
+//         document.location.replace('/profile')
+//     }else{
+//         alert(response.statusText);
+//     }
+    
+// }
+
 
 //will need to add the proper id here when we have it 
 document.querySelector('.new-book-form').addEventListener('submit', addBook)
