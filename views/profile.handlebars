@@ -1,23 +1,19 @@
 <section class="pb-5">
-    <div class="container text-center">
-        <!-- Masonry grid -->
-        <div class="gallery-wrapper">
-            <!-- Grid sizer -->
-            <div class="grid-sizer col-lg-3 col-md-3"></div>
-            <!-- Grid item -->
-            {{#if books.length}}
-            <section id="yourBooks">
-                <h2>Your Books</h2>
+    <div class="container">
+        {{#if books.length}}
+        <section id="yourBooks">
+            <h2 class="pt-2">Your Books</h2>
+            {{!-- start grid --}}
+            <div class="row mb-5" data-masonry='{"percentPosition": true }'>
                 {{#each books as |book|}}
-                {{> book-info book}}  
-                <a href="/dashboard/edit/{{id}}"><button class="s-primary is-pulled-right mt-3 mb-3 btn btn-outline-success">Edit Book</button></a>
+                {{> book-info book}}
                 {{/each}}
-            </section>
-            {{else}}
-                <h4 class="pb-4 has-text-centered is-bold">There are no Books to view at this moment</h4>
-            {{/if}}
-            <a href="/dashboard/post"><button type="submit" class="s-primary is-pulled-right mt-4 mb-3 btn btn-outline-success">Click to Add Books</button></a>
-        </div>
+            </div>
+         </section>
+         {{else}}
+          <h4 class="pb-4 has-text-centered is-bold">There are no Books to view at this moment</h4>
+         {{/if}}
+          <a href="/dashboard/post"><button type="submit" class="s-primary is-pulled-right mt-4 mb-3 btn btn-outline-success">Click to Add Books</button></a>
     </div>
+    <btn class="btn btn-success"><a href="/post" class="text-white text-decoration-none">Post New Book</a></btn>
 </section>
-<script src="/js/masonryGrid.js"></script>

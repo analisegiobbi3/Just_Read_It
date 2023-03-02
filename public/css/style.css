@@ -17,8 +17,9 @@ h1 {
 main {
     background-color: antiquewhite;
 }
+
 .img-thumbnail {
-    margin:3em;
+    margin: 3em;
 }
 
 #loginbtn {
