@@ -19,26 +19,28 @@
         <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     </head>
     <body>
-        <header>
+        <header class="nav-header">
             <div class ="container-fluid">
-                <h1 class="text-center" id="page-title">Just Read It!</h1>
+                <h4 class="text-center" id="page-title">Just Read It!</h4>
                 <img id="header-img" class="rounded float-start" src="/assets/output-onlinegiftools.gif" alt="Book/E-reader animation" class="img-thumbnail">
             </div>
 
-            <nav id="nav-bar" class="text-center d-flex float-center">
+            <nav id="nav-bar" class="nav-bar d-flex justify-content-center">
+               
 
-                <span><a class="nav-link active fs-3" href="/">Home</a></span>
+                <a class="nav-link active fs-3" href="/">Home</a>
                 {{#if logged_in}}
                 <a class="nav-link active fs-3" href="/profile">Your Books</a>
-                <a class="nav-link active fs-3" href="/findBooks">Find Books Near You!</a>
-                <a class="nav-link active fs-3" href="/post">Add a Book</a>
+                <a class="nav-link active fs-3" href="/profile/findBooks">Find Books Near You!</a>
+                <a class="nav-link active fs-3" href="/profile/post">Add a Book</a>
 
-                <a class="nav-link active fs-3" href="/logout">Logout</a>
+                <button id="logout" class="nav-link active fs-3 btn btn-link">Logout</button>
 
                 {{else}}
                 <a class="nav-link active fs-3" href="/login">Login</a>
                 <a class="nav-link active fs-3" href="/signup">Sign Up!</a>
                 {{/if}}
+
             </nav>
         </header>
         <main>

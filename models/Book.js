@@ -11,6 +11,11 @@ Book.init(
             primaryKey: true,
             autoIncrement: true,
         },
+        book_cover: {
+            type: DataTypes.STRING,
+            allowNull: true
+
+        },
         book_title: {
             type: DataTypes.STRING,
             allowNull: false,
