@@ -6,21 +6,20 @@
         </header>
 
         <body>
-        
-        
-        {{#if user.length}}
-        <section id="userInfo">
-            {{#each users as |user|}}
-            {{username}}
-            <div id="userBooks">
-            {{> user-info user}}
-            </div>  
-            {{/each}}
-        </section>
-        {{else}}
-         <h4 class="pb-4 has-text-centered is-bold">No one has shared their books with you yet.</h4>
-        {{/if}}
-    </body>
+            <h3>See what other people are reading</h3>
+            {{#if user.length}}
+            <section id="userInfo">
+                {{#each user as |user|}}
+                {{username}}
+                <div id="userBooks">
+                {{> user-info user}}
+                </div>  
+                {{/each}}
+            </section>
+            {{else}}
+            <h4 class="pb-4 has-text-centered is-bold">No one has shared their books with you yet.</h4>
+            {{/if}}
+        </body>
     </main>
 </body>
 <script src="/js/masonryGrid.js"></script>
