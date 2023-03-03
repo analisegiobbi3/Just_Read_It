@@ -5,8 +5,6 @@ const withAuth = require('../../utils/auth')
 const {Akademibokhandeln, Adlibris} = require('book-api')
 const fetch = require('node-fetch')
 
-
-
 //not sure if we need to get all of the book data to post or destroy
 router.get('/', async (req, res) =>{
     try{
