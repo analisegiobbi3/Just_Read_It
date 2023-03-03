@@ -8,6 +8,7 @@ router.get('/', withAuth, async (req, res) =>{
         const bookData = await Book.findAll({
             attributes: [
                 'id',
+                'book_cover',
                 'book_title',
                 'author',
                 'user_id',
@@ -15,6 +16,7 @@ router.get('/', withAuth, async (req, res) =>{
             ],
         })
         const books = bookData.map((book) => book.get({ plain: true }))
+        console.log(books)
         res.render('profile', {
             books,
             logged_in: req.session.logged_in
@@ -29,6 +31,7 @@ router.get('/edit/:id', withAuth, async (req, res) => {
         const yourBookData = await Book.findByPk(req.params.id, {
             attributes: [
                 'id',
+                'book_cover',
                 'book_title',
                 'author',
                 'user_id',
@@ -65,6 +68,7 @@ router.get('/post/', withAuth, async (req, res) =>{
             },
             attributes: [
                 'id',
+                'book_cover',
                 'book_title',
                 'author',
                 'user_id',

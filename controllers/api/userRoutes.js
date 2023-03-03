@@ -21,7 +21,7 @@ router.get('/:id', async (req, res) =>{
             include: [
                 {
                     model: Book,
-                    attributes: [ 'id', 'book_title', 'author', 'user_id'],
+                    attributes: [ 'id', 'book_cover','book_title', 'author', 'user_id'],
 
                 }
 
