@@ -14,12 +14,18 @@ router.get('/', withAuth, async (req, res) =>{
                 'user_id',
                 'created_at',
             ],
+            include: [
+                {
+                    model: User,
+                    attributes: ['username'],
+                },
+            ]
         })
         const books = bookData.map((book) => book.get({ plain: true }))
         console.log(books)
         res.render('profile', {
             books,
-            logged_in: req.session.logged_in
+            logged_in: true
         })
     }catch(err){
         res.status(500).json(err)

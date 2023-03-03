@@ -7,6 +7,7 @@
             <div class="row mb-5" data-masonry='{"percentPosition": true }'>
                 {{#each books as |book|}}
                 {{> book-info book}}
+                <a href="/profile/edit/{{id}}"><button class="row s-primary btn btn-outline-success">Edit Book</button></a>
                 {{/each}}
             </div>
          </section>

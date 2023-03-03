@@ -4,7 +4,7 @@
 }
 
 .nav-header{
-    background:rgb(199, 118, 51); 
+    background:#d4a373; 
     color:white;
     padding: 3rem;
 }
@@ -24,7 +24,8 @@ main {
 
 #page-title {
     font-size:6rem;
-    color:aliceblue;
+    color:#faedcd;
+    font-family: 'Rowdies', cursive;
 }
 
 #loginbtn {
@@ -114,4 +115,11 @@ nav > a:hover {
  #loginSubmitBtn:hover {
     background-color: #CCD5AE;
     transition: 0.3s;
+ }
+
+ #findBooks{
+    font-family: 'Rowdies', cursive;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #344e41;
  }
