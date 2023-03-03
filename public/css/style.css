@@ -76,6 +76,18 @@ nav > a:hover {
     color: black;
 }
 
+#header-img {
+    height: 150px;
+    width: 150px;
+}
+
+#page-title {
+
+    font-size: 1000%;
+    margin-bottom: -15rem;
+    
+}
+=======
 .signup-form {
     margin-bottom: 10px;
     position: relative;
@@ -87,3 +99,16 @@ nav > a:hover {
     background-color: #4CAF50;
     transition: 0.3s;
 }
+
+.login-form {
+    margin-bottom: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+ 
+ 
+ #loginSubmitBtn:hover {
+    background-color: #CCD5AE;
+    transition: 0.3s;
+ }
