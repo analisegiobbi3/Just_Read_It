@@ -7,6 +7,7 @@ router.get('/', async (req, res) => {
         const bookData = await Book.findAll({
             attributes: [
                 'id',
+                'book_cover',
                 'book_title',
                 'author',
                 'user_id',
