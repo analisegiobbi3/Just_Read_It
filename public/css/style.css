@@ -17,8 +17,9 @@ h1 {
 main {
     background-color: antiquewhite;
 }
+
 .img-thumbnail {
-    margin:3em;
+    margin: 3em;
 }
 
 #loginbtn {
@@ -50,7 +51,25 @@ main {
     text-decoration: underline;
 }
 
-#map { height: 180px; }
+nav > a {
+    color: white;
+    padding: 0 1em 0 1em;
+    text-decoration: none;
+} /* changed */
+
+nav > a:hover {
+    color: #ccd5ae;
+    transition: 0.3s;
+}
+
+#yourBooks > h2 {
+    color: #3a5a40
+}
+
+#map { 
+    height: 700px;
+    width: auto;
+ }
 
 #mainHeader {
     font-family: 'Gloock', serif;
@@ -67,4 +86,16 @@ main {
     font-size: 1000%;
     margin-bottom: -15rem;
     
+}
+=======
+.signup-form {
+    margin-bottom: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#signUpSubmitBtn:hover {
+    background-color: #4CAF50;
+    transition: 0.3s;
 }
