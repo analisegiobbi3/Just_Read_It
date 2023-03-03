@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Just Read It!</title>
         <!-- bootstrap links -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+     
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">        <!-- Google fonts -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
         <!-- masonry grid script for profile page -->
         <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" async></script>
@@ -18,27 +19,31 @@
         <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     </head>
     <body>
-        <header >
-            <div class ="container-fluid text-center">
-                <h1>Just Read It!</h1>
+        <header>
+            <div class ="container-fluid">
+                <h1 class="text-center" id="page-title">Just Read It!</h1>
+                <img id="header-img" class="rounded float-start" src="/assets/output-onlinegiftools.gif" alt="Book/E-reader animation" class="img-thumbnail">
             </div>
-        
-            <nav class="text-center">
-                <span><a class="nav-link active" href="/">Home</a></span>
+
+            <nav id="nav-bar" class="text-center d-flex float-center">
+
+                <span><a class="nav-link active fs-3" href="/">Home</a></span>
                 {{#if logged_in}}
-                <a class="nav-link active" href="/profile">Your Books</a>
-                <a class="nav-link active" href="/profile/findBooks">Find Books Near You!</a>
-                <a class="nav-link active" href="/profile/post">Add a new book</a>
-                <button id="logout" class="btn-no-style">Logout</button>
+                <a class="nav-link active fs-3" href="/profile">Your Books</a>
+                <a class="nav-link active fs-3" href="/findBooks">Find Books Near You!</a>
+                <a class="nav-link active fs-3" href="/post">Add a Book</a>
+
+                <a class="nav-link active fs-3" href="/logout">Logout</a>
+
                 {{else}}
-                <a class="nav-link active" href="/login">Login</a>
-                <a class="nav-link active" href="/signup">Sign Up!</a>
+                <a class="nav-link active fs-3" href="/login">Login</a>
+                <a class="nav-link active fs-3" href="/signup">Sign Up!</a>
                 {{/if}}
             </nav>
         </header>
         <main>
             <div class="container-fluid text-center">
-                {{!-- <img src="/assets/output-onlinegiftools.gif" alt="Book/E-reader animation" class="img-thumbnail"> --}}
+
                 <div>
                     {{{body}}}
                 </div>

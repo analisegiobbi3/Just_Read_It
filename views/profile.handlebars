@@ -9,12 +9,11 @@
                 {{> book-info book}}
                 {{/each}}
             </div>
-        </section>
-        <btn class="btn btn-success"><a href="/post" class="text-white text-decoration-none">Add New Book</a></btn>
-        {{else}}
-            <h4 class="pb-4 has-text-centered is-bold">There are no Books to view at this moment</h4>
-            <a href="/dashboard/post"><button type="submit" class="s-primary is-pulled-right mt-3 mb-3 btn btn-outline-success">Click Add Books</button></a>
-        {{/if}}
+         </section>
+         {{else}}
+          <h4 class="pb-4 has-text-centered is-bold">There are no Books to view at this moment</h4>
+         {{/if}}
+          <a href="/dashboard/post"><button type="submit" class="s-primary is-pulled-right mt-4 mb-3 btn btn-outline-success">Click to Add Books</button></a>
     </div>
     <btn class="btn btn-success"><a href="/post" class="text-white text-decoration-none">Post New Book</a></btn>
 </section>
