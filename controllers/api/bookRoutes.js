@@ -3,7 +3,7 @@ const { Book } = require('../../models');
 const sequelize = require('../../config/connection');
 const withAuth = require('../../utils/auth')
 
-//not sure if we neeed to get all of the book data to post or destroy
+//not sure if we need to get all of the book data to post or destroy
 router.get('/', async (req, res) =>{
     try{
         const bookData = await Book.findAll({
