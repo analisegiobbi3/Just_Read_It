@@ -3,11 +3,11 @@
     <form>
         <div class="mt-5 mb-3">
             <label for="book-title" class="form-label me-4">Book Title: </label>
-            <input class="input" name="edit-book-title" type="text" value="{{book.book_title}}"/>
+            <input id="edit-title" class="input" name="edit-book-title" type="text" value="{{book.book_title}}"/>
         </div>
         <div class="mb-3">
             <label for="book-author" class="form-label me-2">Book Author: </label>
-            <input class="textarea" name="edit-author-name" type="text" value="{{book.author}}"/>
+            <input id="edit-author" class="textarea" name="edit-author-name" type="text" value="{{book.author}}"/>
         </div>
         <button id="submit-edit-post" type="submit" class="is-primary is-pulled-right m-3 btn btn-outline-success" style="color: #1b4332">Save Edited Book</button>
         <button id="delete-post" type="button" class="is-primary is-pulled-right m-3 btn btn-outline-danger" style="color: #64150e">Delete Book</button>
