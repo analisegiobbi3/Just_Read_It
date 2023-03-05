@@ -1,6 +1,5 @@
 :root {
     font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
 
 .nav-header{
@@ -72,6 +71,16 @@ nav > a:hover {
 
 #yourBooks > h2 {
     color: #3a5a40
+}
+
+#book-author-input{
+    font-family: 'Rowdies', cursive;
+    color: #344e41;
+}
+
+#book-title-input{
+    font-family: 'Rowdies', cursive;
+    color: #344e41;
 }
 
 #map { 
