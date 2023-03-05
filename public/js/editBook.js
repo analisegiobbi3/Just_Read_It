@@ -1,15 +1,15 @@
 const editBook = async(event) => {
     event.preventDefault();
     //need some handlgers here that are based off of button/ inputs in the html
-    const book_title = document.querySelector('input[name="edit-book-title"]').value.trim();
-    const book_author = document.querySelector('input[name="edit-author-name"]').value.trim();
+    const book_title = document.querySelector('#edit-title').value.trim();
+    const author = document.querySelector('#edit-author').value.trim();
     const id = window.location.toString().split('/')[window.location.toString().split('/').length-1];
 
     const response = await fetch(`/api/books/${id}`, {
         method: 'PUT',
         body: JSON.stringify({
             book_title,
-            book_author,
+            author,
         }),
         headers: { 'Content-Type': 'application/json' },
     })
@@ -20,4 +20,4 @@ const editBook = async(event) => {
     }
 }
 
-document.querySelector('#submit-edit-post').addEventListener('submit', editBook)
+document.querySelector('#submit-edit-post').addEventListener('click', editBook)
