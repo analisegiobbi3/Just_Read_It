@@ -6,14 +6,13 @@
             {{!-- start grid --}}
             <div class="row mb-5" data-masonry='{"percentPosition": true }'>
                 {{#each books as |book|}}
-                {{> book-info book}}
-                <a href="/profile/edit/{{id}}"><button class="row s-primary btn btn-outline-success">Edit Book</button></a>
+                {{> yourbook-info book}}
                 {{/each}}
             </div>
          </section>
          {{else}}
           <h4 class="pb-4 has-text-centered is-bold">There are no Books to view at this moment</h4>
          {{/if}}
-          <a href="/dashboard/post"><button type="submit" class="s-primary is-pulled-right mt-4 mb-3 btn btn-outline-dark">Click Here to Add Books</button></a>
+          <a href="/profile/post"><button type="submit" class="s-primary is-pulled-right mt-4 mb-3 btn btn-outline-dark">Click Here to Add Books</button></a>
     </div>
 </section>

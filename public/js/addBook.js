@@ -1,4 +1,3 @@
-
 const addBook = async (event) => {
     event.preventDefault();
     //need some handlgers here that are based off of button/ inputs in the html
@@ -35,6 +34,3 @@ const addBook = async (event) => {
 
 //will need to add the proper id here when we have it 
 document.querySelector('.new-book-form').addEventListener('submit', addBook)
-
-
-
