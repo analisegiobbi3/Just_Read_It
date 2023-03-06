@@ -21,7 +21,7 @@ router.get('/:id', async (req, res) =>{
             include: [
                 {
                     model: Book,
-                    attributes: [ 'id', 'book_title', 'author', 'user_id'],
+                    attributes: [ 'id', 'book_cover','book_title', 'author', 'user_id'],
 
                 }
 
@@ -41,6 +41,7 @@ router.post('/', async (req, res) =>{
         const userData = await User.create(req.body)
         req.session.save(() => {
             req.session.user_id = userData.id;
+            req.session.username = userData.username;
             req.session.logged_in = true;
             res.status(200).json(userData)
         })
@@ -67,6 +68,7 @@ router.post('/login', async (req, res) => {
 
         req.session.save(() => {
             req.session.user_id = userData.id;
+            req.session.username = userData.username;
             req.session.logged_in = true;
             res.json({ user: userData, message: 'You are now logged into the website'});
         })

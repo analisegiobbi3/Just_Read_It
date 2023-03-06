@@ -15,10 +15,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Rowdies:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
         <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     </head>
     <body>
+
         <header class="nav-header">
             <div class ="container-fluid">
                 <h4 class="text-center" id="page-title">Just Read It!</h4>
@@ -35,6 +39,7 @@
                 <a class="nav-link active fs-3" href="/profile/post">Add a Book</a>
 
                 <button id="logout" class="nav-link active fs-3 btn btn-link">Logout</button>
+
 
                 {{else}}
                 <a class="nav-link active fs-3" href="/login">Login</a>

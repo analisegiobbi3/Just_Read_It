@@ -6,7 +6,7 @@
             {{!-- start grid --}}
             <div class="row mb-5" data-masonry='{"percentPosition": true }'>
                 {{#each books as |book|}}
-                {{> book-info book}}
+                {{> yourbook-info book}}
                 {{/each}}
             </div>
          </section>
@@ -15,5 +15,4 @@
          {{/if}}
           <a href="/profile/post"><button type="submit" class="s-primary is-pulled-right mt-4 mb-3 btn btn-outline-dark">Click Here to Add Books</button></a>
     </div>
-  
 </section>

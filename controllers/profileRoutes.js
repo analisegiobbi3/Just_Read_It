@@ -6,15 +6,26 @@ const withAuth = require('../utils/auth')
 router.get('/', withAuth, async (req, res) =>{
     try{
         const bookData = await Book.findAll({
+            where: {
+                user_id: req.session.user_id
+            },
             attributes: [
                 'id',
+                'book_cover',
                 'book_title',
                 'author',
                 'user_id',
                 'created_at',
             ],
+            // include: [
+            //     {
+            //         model: User,
+            //         attributes: ['username'],
+            //     },
+            // ]
         })
         const books = bookData.map((book) => book.get({ plain: true }))
+        console.log(books)
         res.render('profile', {
             books,
             logged_in: req.session.logged_in
@@ -29,6 +40,7 @@ router.get('/edit/:id', withAuth, async (req, res) => {
         const yourBookData = await Book.findByPk(req.params.id, {
             attributes: [
                 'id',
+                'book_cover',
                 'book_title',
                 'author',
                 'user_id',
@@ -65,6 +77,7 @@ router.get('/post/', withAuth, async (req, res) =>{
             },
             attributes: [
                 'id',
+                'book_cover',
                 'book_title',
                 'author',
                 'user_id',

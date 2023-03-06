@@ -1,10 +1,9 @@
 :root {
     font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
 
 .nav-header{
-    background:rgb(199, 118, 51); 
+    background:#d4a373; 
     color:white;
     padding: 3rem;
 }
@@ -24,7 +23,8 @@ main {
 
 #page-title {
     font-size:6rem;
-    color:aliceblue;
+    color:#faedcd;
+    font-family: 'Rowdies', cursive;
 }
 
 #loginbtn {
@@ -73,6 +73,16 @@ nav > a:hover {
     color: #3a5a40
 }
 
+#book-author-input{
+    font-family: 'Rowdies', cursive;
+    color: #344e41;
+}
+
+#book-title-input{
+    font-family: 'Rowdies', cursive;
+    color: #344e41;
+}
+
 #map { 
     height: 700px;
     width: auto;
@@ -88,9 +98,7 @@ nav > a:hover {
     width: 200px;
     position:relative;
     margin-top:-8rem;
-
 }
-
 
 .signup-form {
     margin-bottom: 10px;
@@ -104,6 +112,23 @@ nav > a:hover {
     transition: 0.3s;
 }
 
-#nav-bar{
-    padding-right: 11rem;
-}
+
+.login-form {
+    margin-bottom: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+ 
+ 
+ #loginSubmitBtn:hover {
+    background-color: #CCD5AE;
+    transition: 0.3s;
+ }
+
+ #findBooks{
+    font-family: 'Rowdies', cursive;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #344e41;
+ }

@@ -1,26 +1,17 @@
-<body>
-    <main class="container">
-        <header class="text-center">
-           
-            <h2  id="mainHeader" class="pb-5 position-relative"> See What's New</h2>
-        </header>
-
-        <body>
-        
-        
-        {{#if user.length}}
-        <section id="userInfo">
-            {{#each users as |user|}}
-            {{username}}
-            <div id="userBooks">
-            {{> user-info user}}
-            </div>  
-            {{/each}}
-        </section>
-        {{else}}
-         <h4 class="pb-4 has-text-centered is-bold">No one has shared their books with you yet.</h4>
-        {{/if}}
-    </body>
-    </main>
-</body>
-<script src="/js/masonryGrid.js"></script>
+<section class="pb-5">
+    <div class="container">
+        {{#if books.length}}
+        <section id="yourBooks">
+            <h2 class="pt-2">See what other people are reading</h2>
+            {{!-- start grid --}}
+            <div class="row mb-5" data-masonry='{"percentPosition": true }'>
+                {{#each books as |book|}}
+                {{> book-info book}}
+                {{/each}}
+            </div>
+         </section>
+         {{else}}
+          <h4 class="pb-4 has-text-centered is-bold">There are no Books to view at this moment</h4>
+         {{/if}}
+    </div>
+</section>
