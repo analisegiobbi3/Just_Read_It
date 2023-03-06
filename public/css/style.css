@@ -132,3 +132,39 @@ nav > a:hover {
     margin-top: 5px;
     color: #344e41;
  }
+
+ 
+@media screen and (max-width: 900px) {
+
+    .nav-header{
+        display: grid;
+        justify-content: center;
+    }
+
+    #header-set {
+        display:grid;
+    }
+    #page-title {
+        font-size:6em;
+    }
+
+    #header-img{
+        margin: 1em;
+        justify-self: center;
+    }
+    nav {
+        flex-wrap:wrap;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #page-title {
+        font-size:3em;
+    }
+}
