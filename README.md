@@ -18,6 +18,9 @@
   ## [Description](#table-of-contents)
   This project is meant to demonstrate skills in full stack web development using MVC coding methodology. The project itself is a book tracking/storing/sharing interactive website. 
   Just Read It is an accessible and convenient site for book lovers to track and share books they read. This site allows users to input their books, share with others, leave comments on their posts, and find new books to read next. Users are also able to click on the map tab to find local bookstores within a 5 mile radius of their respective area. 
+  
+  As a user, I want to track my books and reading progress, share the books I love and comment on other people’s reading habits, and get book suggestions based on the books I have read
+So that I can track my reading habits, receive suggestions, and interact with other users. 
 
   ## [Installation](#table-of-contents)
   to work on the program locally, use the following instructions:
@@ -29,18 +32,15 @@
     - `npm run seeds`
   4. You can now run the application locally using `npm start`
 
-  To use the website deployed through Heroku, use the link below
+  To use the website deployed through Heroku, use the link below:
+  
+  [Just Read It!](https://warm-cove-40506.herokuapp.com/)
 
   ## [Usage](#table-of-contents)
   This website is used as an educational tool for MVC development and as a tool to store and track the books you read. 
   
   Users can login to their account and add books they are currently reading. By entering the name of a book title and author into the search engine, a book title with the author, title, and cover will be generated and added to the user's profile and main homepage. Users are able to see what others are reading as well. Finally, users can click on the map tab to see bookstores in their area. 
 
-## [User Story](#table-of-contents)
-As a user, I want to track my books and reading progress, share the books I love and comment on other people’s reading habits, and get book suggestions based on the books I have read
-So that I can track my reading habits, receive suggestions, and interact with other users. 
-
- 
  ## [License](#table-of-contents)
   [mit](http://choosealicense.com/licenses/mit/)
 
@@ -56,6 +56,13 @@ So that I can track my reading habits, receive suggestions, and interact with ot
    ---
   ## [Questions](#table-of-contents)
   For any inquiries regarding the application, please use the github or email below: 
+  
+  [GitHub](https://github.com/analisegiobbi3)
+  [Email: analise.giobbi@gc.com](mailto:analise.giobbi@gc.com)
+  [Email: ima2132@columbia.edu](mailto:ima2132@columbia.edu)
+  [Email: mauritz.majelyne@gmail.com](mailto:mauritz.majelyne@gmail.com)
+  [Email: TaiWDisla@gmail.com](mailto:TaiWDisla@gmail.com)
+  
 
 
 <img width="1440" alt="Screen Shot 2023-03-06 at 12 <img width="1440" alt="Screen Shot 2023-03-06 at 12 05 32 AM" src="https://user-images.githubusercontent.com/117132129/223053286-c07c104f-ec11-493e-aa38-6e0a93a2cf14.png">
