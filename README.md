@@ -7,7 +7,6 @@
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [User Story] (#user-story) 
   - [License](#license)
   - [How to Contribute](#how-to-contribute)
   - [Tests](#tests)
